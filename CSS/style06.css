@@ -1,0 +1,163 @@
+@charset "UTF-8";
+/* detail-person用 */
+
+html {
+    font-size: 100%;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.title {
+    color: #0279c4;
+    margin-left: 55px;
+    display: flex;
+    align-items: center;
+    font-size: 60px;
+}
+
+img {
+    align-self: center;
+    height: 75px;
+    width: 75px;
+    margin: 15px;
+}
+
+.top-link {
+    display: flex; 
+    align-items: center;
+}
+
+.top-link a{
+    display: flex;
+    text-decoration: none;
+}
+
+.top {
+    text-decoration: none;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 303px;
+    height: 60px;
+    background-color: #0279c4;
+    color: #ffffff;
+    position: relative;
+    margin-right: 50px;
+    margin-left: auto;
+}
+
+.top p::after {
+    content: '＞';
+    position: absolute; 
+    right: 10px; 
+}
+
+.edit-title {
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+    color: #333333;
+    margin: 60px auto 45px;
+    border: solid 1px #666666;
+    width: 550px;
+    height: 70px;
+    align-items: center;
+    border-left-width: 20px;
+    border-left-color: #0279c4;
+}
+
+.person-edit {
+    display: grid;
+}
+
+.person-edit label{
+    font-size: 18px;
+    color: #333333;
+}
+
+.person-edit  div {
+    margin: 0 auto;
+}
+
+.input,
+.input2 {
+    border-style: solid;
+    border-width: 1px;
+    width: 550px;
+    height: 45px;
+    margin: 0 auto;
+    color: #666666;
+    margin-bottom: 40px;
+}
+
+.input-container.error .input,
+.input-container.error .input2 {
+    margin-bottom: 70px;
+}
+
+.edit-btn {
+    font-size: 24px;
+    width: 303px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    color: #ffffff;
+    margin: 0 auto 75px;
+}
+
+.edit-btn-wrap {
+    position: relative;
+    display: inline-block;
+}
+
+.edit-btn-wrap::after {
+    content: '＞';
+    position: absolute;
+    right: 10px;
+    bottom: 87px;
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.invalid {
+    background-color: #ff9999;
+}
+
+.input-container {
+    position: relative;
+}
+
+.error-message,
+.error-message2,
+.error-message3,
+.error-message4,
+.error-message5 {
+    color: red;
+    font-size: 18px;
+    display: none;
+    position: absolute;
+    bottom: 40px; 
+    left: 0;
+}
+
+.error-message2.active {
+    bottom: 46px; 
+}
+
+.error-message3.active {
+    bottom: 25px;
+}
